@@ -1,0 +1,11 @@
+{
+    "DeepEq.js": [
+        {
+            "operation": "PASTE",
+            "lines": 35,
+            "keyStrokeTimeStamp": "Tue Apr 13 2021 01:48:44",
+            "keyStrokeInfo": "\r\nvar deepEqual = function (x, y) {\r\n  if (x === y) {\r\n    return true;\r\n  }\r\n  else if ((typeof x == \"object\" && x != null) && (typeof y == \"object\" && y != null)) {\r\n    if (Object.keys(x).length != Object.keys(y).length)\r\n      return false;\r\n\r\n    for (var prop in x) {\r\n      if (y.hasOwnProperty(prop))\r\n      {  \r\n        if (! deepEqual(x[prop], y[prop]))\r\n          return false;\r\n      }\r\n      else\r\n        return false;\r\n    }\r\n\r\n    return true;\r\n  }\r\n  else \r\n    return false;\r\n}\r\n\r\nvar obj = {here: {is: \"an\", other: \"3\"}, object: 2};\r\nconsole.log(deepEqual(obj, obj));\r\n// → true\r\nconsole.log(deepEqual(obj, {here: 1, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\"}, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\", other: \"2\"}, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\", other: \"3\"}, object: 2}));\r\n// → true",
+            "position": "1,1"
+        }
+    ]
+}

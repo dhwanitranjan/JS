@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Playable Drum Kit</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <main>
+			<h1 class="main-title">Playable Drum Kit</h1>
+
+			<!-- section for key mapping legend explaining which keys go to which part of the drum kit -->
+			<section class="key-list-wrapper">
+				<h2>Key Mapping</h2>
+				<div class="key-list">
+					<div class="key-group">
+						<span class="code">C</span>
+						<span class="sound">Crash</span>
+					</div>										
+					<div class="key-group">
+						<span class="code">F</span>
+						<span class="sound">Floor Tom</span>
+					</div>
+					<div class="key-group">
+						<span class="code">T</span>
+						<span class="sound">Left Tom</span>
+					</div>
+					<div class="key-group">
+						<span class="code">Y</span>
+						<span class="sound">Right Tom</span>
+					</div>
+					<div class="key-group">
+						<span class="code">B</span>
+						<span class="sound">Kick/Bass</span>
+					</div>
+					<div class="key-group">
+						<span class="code">S</span>
+						<span class="sound">Snare</span>
+					</div>
+					<div class="key-group">
+						<span class="code">H</span>
+						<span class="sound">Hi-Hat</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- section for the images of the drum kit as well as their keys -->
+            <section class="drum-wrapper">
+				<img class="crash-cymbal" src="assets/img/crash.png" alt="Crash cymbal">
+				<img class="hihat-top-cymbal" src="assets/img/hihat-top.png" alt="Hi Hat cymbal">
+				<div data-key="83" class="key snare">
+					<span>S</span>
+				</div>
+				<div data-key="66" class="key kick">
+					<span>B</span>
+				</div>
+				<div data-key="89" class="key tom-high">
+					<span>Y</span>
+				</div>
+				<div data-key="84" class="key tom-mid">
+					<span>T</span>
+				</div>
+				<div data-key="70" class="key tom-floor">
+					<span>F</span>
+				</div>
+				<div data-key="67" class="key crash">
+					<span>C</span>
+				</div>
+				<div data-key="72" class="key hihat-closed">
+					<span>H</span>
+				</div>
+				<img class="drum-kit" src="drum.png" alt="Drum Kit">			
+			</section>
+
+			<!-- section for the instructions box -->
+			<section class="instructions">
+				<p>Click on or press the assigned key to play a sound.</p>
+			</section>
+        </main>
+
+        <!-- audio files -->
+        <audio data-key="84" src="sounds/Big-Rack-Tom.mp3"></audio>
+        <audio data-key="67" src="sounds/Crash.mp3"></audio>
+        <audio data-key="70" src="sounds/Floor-Tom.mp3"></audio>
+        <audio data-key="72" src="sounds/Hi-Hat-Closed.mp3"></audio>
+        <audio data-key="66" src="sounds/Kick.mp3"></audio>
+        <audio data-key="89" src="sounds/Small-Rack-Tom.mp3"></audio>
+        <audio data-key="83" src="sounds/Snare.mp3"></audio>
+
+		<!-- load in scripts to make audio and transformations work -->
+        <script src="jss.js"></script>
+    </body>
+</html>

@@ -7,5 +7,91 @@
             "keyStrokeInfo": "\r\nvar deepEqual = function (x, y) {\r\n  if (x === y) {\r\n    return true;\r\n  }\r\n  else if ((typeof x == \"object\" && x != null) && (typeof y == \"object\" && y != null)) {\r\n    if (Object.keys(x).length != Object.keys(y).length)\r\n      return false;\r\n\r\n    for (var prop in x) {\r\n      if (y.hasOwnProperty(prop))\r\n      {  \r\n        if (! deepEqual(x[prop], y[prop]))\r\n          return false;\r\n      }\r\n      else\r\n        return false;\r\n    }\r\n\r\n    return true;\r\n  }\r\n  else \r\n    return false;\r\n}\r\n\r\nvar obj = {here: {is: \"an\", other: \"3\"}, object: 2};\r\nconsole.log(deepEqual(obj, obj));\r\n// → true\r\nconsole.log(deepEqual(obj, {here: 1, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\"}, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\", other: \"2\"}, object: 2}));\r\n// → false\r\nconsole.log(deepEqual(obj, {here: {is: \"an\", other: \"3\"}, object: 2}));\r\n// → true",
             "position": "1,1"
         }
+    ],
+    "DrumKit.html": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:28:10",
+            "keyStrokeInfo": "<!-- ",
+            "position": "91,39"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:28:32",
+            "keyStrokeInfo": "",
+            "position": "91,9"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:29:52",
+            "keyStrokeInfo": "<!-- ",
+            "position": "91,39"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:30:07",
+            "keyStrokeInfo": "",
+            "position": "91,9"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:35:59",
+            "keyStrokeInfo": "<!-- ",
+            "position": "6,49"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:15",
+            "keyStrokeInfo": "",
+            "position": "49,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:15",
+            "keyStrokeInfo": "",
+            "position": "49,4"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:15",
+            "keyStrokeInfo": "",
+            "position": "49,3"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:15",
+            "keyStrokeInfo": "",
+            "position": "49,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:16",
+            "keyStrokeInfo": "",
+            "position": "49,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:16",
+            "keyStrokeInfo": "",
+            "position": "48,43"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Apr 14 2021 01:36:48",
+            "keyStrokeInfo": "",
+            "position": "6,9"
+        }
     ]
 }

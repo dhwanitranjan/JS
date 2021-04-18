@@ -82,4 +82,4 @@ crash.addEventListener('transitionend', removeCrashAnimation);
 hihat.addEventListener('transitionend', removeHiHatAnimation);
 
 // Function for all key presses to play the assigned sound 
-window.addEventListener('keydown', playSoundKey);
+window.addEventListener('keydown', playSoundKey); 
